@@ -1,7 +1,7 @@
 $(document).ready(function(){
   $('#buscador').keyup(function(){
      var nombres = $('.nombres');
-     var buscando = $(this).val();
+     var buscando = $(this).val().toLowerCase();
      var item='';
      for( var i = 0; i < nombres.length; i++ ){
          item = $(nombres[i]).html().toLowerCase();
